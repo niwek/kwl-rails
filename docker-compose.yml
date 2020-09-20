@@ -1,0 +1,10 @@
+version: '3'
+services:
+  habit-postgres:
+    image: clkao/postgres-plv8:10-2
+    ports:
+      - "5432:5432"
+    environment: 
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=test
+      - POSTGRES_PASSWORD=password
